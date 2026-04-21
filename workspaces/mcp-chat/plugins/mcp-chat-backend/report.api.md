@@ -55,10 +55,7 @@ export class ClaudeProvider extends LLMProvider {
 }
 
 // @public
-export function createRouter({
-  logger,
-  mcpClientService,
-}: {
+export function createRouter(input: {
   logger: LoggerService;
   mcpClientService: MCPClientService;
 }): Promise<express.Router>;
